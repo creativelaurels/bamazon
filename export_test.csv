@@ -1,0 +1,14 @@
+"itemID";"productName";"departmentName";"price";"stockQuantity"
+1;"Dog Collar";"Pet Supplies";5.25;10
+2;"Dog Leash";"Pet Supplies";6.25;12
+3;"Dog Collar";"Pet Supplies";5.25;10
+4;"Dog Leash";"Pet Supplies";6.25;12
+5;"Coffee Maker";"Home Goods";20.25;10
+6;"Lamp";"Home Goods";10.25;5
+7;"iPhone";"Tech";199.99;8
+8;"Keyboard";"Tech";20.5;4
+9;"Crayons";"Art Supplies";2.99;15
+10;"Sketchbook";"Art Supplies";5.99;20
+11;"Shampoo";"Bath";4.5;10
+12;"Conditioner";"Bath";5.5;8
+13;"Dog Collar";"Pet Supplies";5.25;10
