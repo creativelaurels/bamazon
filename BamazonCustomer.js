@@ -2,7 +2,7 @@
 
 // require the npm files
 var mysql = require('mysql');
-var prompt = require('prompt');
+var inquirer = require('inquirer');
 
 // provide the details to the mySQL bamazon database
 // can use process argv to get the password instead
@@ -11,7 +11,7 @@ var connection = mysql.createConnection({
     host: 'localhost',
     port: 3306,
     user: 'root',
-    password: '',
+    password: 'sheela05',
     database: 'bamazon'
 });
 
@@ -43,5 +43,21 @@ connection.query('SELECT * FROM products', function(err, data) {
     }
 });
 
+// prompt the user to see what they want to buy
+// start the prompt
+prompt.start();
+
+// get one property from the user: item ID
+// pass in a function that takes two arguments: 1 error, and the result
+prompt.get('itemID', function(err, result) {
+    // if error, throw it
+    if (err) throw err;
+    // if not, log the user input
+    console.log("You selected: " + result.itemID);
+});
+
+
+
+
 // end the connection
-connection.end();
+//connection.end();
